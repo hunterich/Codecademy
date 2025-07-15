@@ -1,0 +1,25 @@
+<!-- print_layout.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invoice Designer</title>
+    <style>
+        #canvas { width: 600px; height: 800px; border: 1px solid #ccc; }
+        .draggable { cursor: move; }
+    </style>
+</head>
+<body>
+    <h2>Invoice Designer</h2>
+    <div id="canvas">
+        <!-- Drag and drop fields here (use JS library for production) -->
+        <div class="draggable" style="position:absolute; top:20px; left:20px;">Logo</div>
+        <div class="draggable" style="position:absolute; top:100px; left:20px;">Invoice #</div>
+        <!-- More fields... -->
+    </div>
+    <button onclick="saveLayout()">Save Layout</button>
+    <script>
+        // Use a JS drag-and-drop library for full functionality
+        function saveLayout() { alert('Layout saved!'); }
+    </script>
+</body>
+</html>
